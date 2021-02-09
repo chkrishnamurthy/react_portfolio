@@ -27,7 +27,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <img src={avatar} alt="" className="sidebar_avatar" />
       <div className="sidebar_name">
-        <p class="head-title">
+        <p className="head-title">
           <span data-text="K">K</span>
           <span data-text="R">R</span>
           <span data-text="I">I</span>
@@ -48,20 +48,20 @@ const Sidebar = () => {
         &#10084; Ful Stack Developer &#10084;
       </div>
 
-      <div class="card js-tilt" ref={tilt}>
+      <div className="card js-tilt" ref={tilt}>
         <header>
           <div>Contact Info</div>
         </header>
-        <div class="card__body">
+        <div className="card__body">
           <h2>7396678358</h2>
           <h2>Hyderabad</h2>
           <div className="mail">
             <h1>chalapatikrishnamurthy@gmail.com</h1>
-            <a href="#" onClick={handleEmailMe}>
-              <i class="fa fa-pencil" aria-hidden="true"></i>
+            <a href="/#" onClick={handleEmailMe}>
+              <i className="fa fa-pencil" aria-hidden="true"></i>
             </a>
           </div>
-          <a href="#" download="#">
+          <a href="/#" download="#">
             <div className="buttonDownload">Download Resume</div>
           </a>
         </div>
@@ -71,23 +71,23 @@ const Sidebar = () => {
       <div className="sidebar_social_icons">
         <ul>
           <li>
-            <a href="#">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="/#">
+              <i className="fa fa-facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="/#">
+              <i className="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="/#">
+              <i className="fa fa-github" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="/#">
+              <i className="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
         </ul>

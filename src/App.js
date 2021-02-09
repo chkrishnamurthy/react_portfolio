@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
             <Sidebar />
           </div>
 
-          <div className="col-lg-9 app_main_content">Main Component</div>
+          <div className="col-lg-9 app_main_content">
+            <Navbar />
+          </div>
         </div>
       </div>
     </div>

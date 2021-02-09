@@ -40,16 +40,15 @@ body {
   height: 100%;
   border-radius: 15px;
 
-  padding: 20px 10.6px;
+  padding: 10px 10.6px;
   box-shadow: 0 0 10px red;
   text-align: center;
   color: red;
 }
 
 .sidebar_avatar {
-  height: 130px;
+  height: 150px;
   width: 150px;
-  object-fit: contain;
   border-radius: 100%;
 }
 
