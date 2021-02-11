@@ -1,9 +1,16 @@
 import React from "react";
+import data from "../projects_data/Projectsdata";
+import ProjectCard from "./ProjectCard";
+import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div>
-      <j2>Projects</j2>
+    <div className="container projects">
+      <div className="row">
+        {data.map((project, index) => {
+          return <ProjectCard key={index} projects={project} />;
+        })}
+      </div>
     </div>
   );
 };
