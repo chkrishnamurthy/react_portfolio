@@ -1,9 +1,9 @@
 import React from "react";
-import "./Resume.css";
+import "./Skills.css";
 import { motion } from "framer-motion";
 import MotionEffect from "../MotionEffect";
 
-const Resume = () => {
+const Skills = () => {
   return (
     <motion.div
       variants={MotionEffect}
@@ -42,23 +42,28 @@ const Resume = () => {
             <ul class="skill">
               <li>
                 <span class="blueline html"></span>
-                <em>HTML</em>
+                <em>HTML/CSS</em>
               </li>
               <li>
                 <span class="blueline css"></span>
-                <em>CSS</em>
+                <em>Javascript</em>
               </li>
-              <li>
-                <span class="blueline php"></span>
-                <em>PHP</em>
-              </li>
+
               <li>
                 <span class="blueline javascript"></span>
-                <em>Javascript</em>
+                <em>Bootstrap</em>
+              </li>
+              <li>
+                <span class="blueline jquery"></span>
+                <em>Debugging Skills</em>
               </li>
               <li>
                 <span class="blueline jquery"></span>
                 <em>jQuery</em>
+              </li>
+              <li>
+                <span class="blueline php"></span>
+                <em></em>
               </li>
             </ul>
           </div>
@@ -67,23 +72,11 @@ const Resume = () => {
             <ul class="skill">
               <li>
                 <span class="greenline wordpress"></span>
-                <em>Wordpress</em>
+                <em>React JS</em>
               </li>
               <li>
                 <span class="greenline prestashop"></span>
-                <em>Prestashop</em>
-              </li>
-              <li>
-                <span class="greenline joomla"></span>
-                <em>Joomla</em>
-              </li>
-              <li>
-                <span class="greenline blogger"></span>
-                <em>Blogger</em>
-              </li>
-              <li>
-                <span class="greenline tridion"></span>
-                <em>Tridion</em>
+                <em>TypeScipt</em>
               </li>
             </ul>
           </div>
@@ -92,23 +85,23 @@ const Resume = () => {
             <ul class="skill">
               <li>
                 <span class="redline dreamweaver"></span>
-                <em>Dreamweaver</em>
+                <em>Node JS</em>
               </li>
               <li>
                 <span class="redline illustrator"></span>
-                <em>Illustrator</em>
+                <em>Mongo DB</em>
               </li>
               <li>
                 <span class="redline photoshop"></span>
-                <em>Photoshop</em>
+                <em>Socket.io</em>
               </li>
               <li>
                 <span class="redline premiere"></span>
-                <em>Premiere</em>
+                <em>Ajax</em>
               </li>
               <li>
                 <span class="redline flash"></span>
-                <em>Flash</em>
+                <em>Express</em>
               </li>
             </ul>
           </div>
@@ -118,4 +111,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Skills;

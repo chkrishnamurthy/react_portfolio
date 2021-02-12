@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/left-sidebar/Sidebar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./components/tabs/About";
-import Resume from "./components/tabs/Resume";
+import Skills from "./components/tabs/Skills";
 import Projects from "./components/tabs/Projects";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
               <Route path="/" exact component={About} />
 
-              <Route path="/resume" component={Resume} />
+              <Route path="/skills" component={Skills} />
               <Route path="/projects" component={Projects} />
             </div>
           </div>

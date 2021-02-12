@@ -1,0 +1,560 @@
+/* .sidebar  */
+
+.dark-theme {
+  --clr-bcg: #111111;
+}
+
+.light-theme {
+  --clr-bcg: rgba(255, 255, 255, 0.884);
+}
+
+.sidebar {
+  background-color: var(--clr-bcg);
+
+  /* background-color: rgb(4, 28, 37); */
+  /* background-color: white; */
+  height: 100%;
+  border-radius: 15px;
+
+  padding: 10px 10.6px;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  color: var(--clr-bcg);
+}
+
+.sidebar_avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+/* Paper Name  */
+
+.head-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+}
+.head-title span {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+.head-title span::before,
+.head-title span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  transform-origin: left top;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+
+.head-title span::before {
+  z-index: 1;
+  /* color: white; */
+  color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+
+.head-title span::after {
+  z-index: 2;
+  color: rgb(4, 28, 37);
+  text-shadow: -1px 0 1px #fff, 1px 0 1px rgba(0, 0, 0, 0.8);
+  transform: rotateY(-40deg);
+}
+
+.head-title span:hover::before {
+  transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+.head-title span:hover::after {
+  transform: rotateY(-10deg);
+}
+.head-title span + span {
+  margin-left: 0.3em;
+}
+
+@media (min-width: 20em) {
+  .head-title {
+    font-size: 1em;
+  }
+  .head-title span::before,
+  .head-title span::after {
+    display: block;
+  }
+}
+@media (min-width: 30em) {
+  .head-title {
+    font-size: 1em;
+  }
+}
+@media (min-width: 40em) {
+  .head-title {
+    font-size: 1em;
+  }
+}
+@media (min-width: 60em) {
+  .head-title {
+    font-size: 1.3em;
+  }
+}
+/* Paper Name Done */
+
+/* Socila Icons */
+
+.sidebar_social_icons ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar_social_icons ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.sidebar_social_icons ul li a {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+}
+.sidebar_social_icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #98ded9;
+  transform: scale(0.9);
+  z-index: -1;
+  transition: 0.4s;
+}
+.sidebar_social_icons ul li a:hover::before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #98ded9;
+  filter: blur(3px);
+}
+.sidebar_social_icons ul li a:hover {
+  color: #aee1e1;
+  box-shadow: 0 0 15px #98ded9;
+  text-shadow: 0 0 15px #98ded9;
+}
+/* Icons Done */
+
+/* sidebar_role */
+
+.sidebar_role {
+  font-size: 20px;
+}
+/* sidebar role */
+
+/* download button */
+
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 30px 25px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+  border-radius: 20px;
+  transform: translateZ(20px);
+}
+
+/* .buttonDownload:hover {
+    background-color: #333;
+    color: white;
+  } */
+
+.buttonDownload:before,
+.buttonDownload:after {
+  content: " ";
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 49%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+  cursor: pointer;
+  width: 14px;
+  height: 5px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+
+  animation: downloadArrow 2s linear infinite;
+  /* animation-play-state: paused; */
+  color: #4cc713;
+}
+
+.buttonDownload:hover:before {
+  border-color: #4cc713;
+  cursor: pointer;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: #4cc713;
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+  /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+/* Done download button */
+
+.sidebar_item {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.contact {
+  background-color: #1c1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.336);
+  height: 40%;
+  border-radius: 20px;
+}
+
+/* contact */
+.container {
+  background-color: black;
+  border: rgba(231, 222, 222, 0.5) 1px solid;
+  border-radius: 5px;
+  padding-left: 25px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container .row {
+  height: auto;
+}
+
+:root {
+  --tint: #dd3333; /* Color */
+  --innerOpacity: 0.2; /* Brightness */
+  --outerOpacity: 0.7; /* Vignette Amount */
+  --animationSpeed: 0.3s; /* Base animation timing */
+  --cardRound: 30px;
+}
+
+.profile_card {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  border-top-left-radius: calc(var(--cardRound) + 3px);
+  border-top-right-radius: calc(var(--cardRound) + 3px);
+  border-bottom-left-radius: var(--cardRound);
+  border-bottom-right-radius: var(--cardRound);
+  position: relative;
+  transition: transform var(--animationSpeed) ease;
+  transform-style: preserve-3d;
+}
+.profile_card::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--cardRound);
+  transition: box-shadow var(--animationSpeed) ease;
+  box-shadow: 0 0 0px rgba(7, 113, 199, 0.2), 0 0 39px rgba(7, 113, 199, 0.2),
+    0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.profile_card:hover,
+.profile_card.hovered {
+  transform: scale(1.4);
+}
+
+.card__body h1 {
+  text-shadow: 0 0 5px rgba(125, 21, 21, 0.5);
+}
+
+/* header::after {
+    opacity: 0.3;
+  } */
+
+header div {
+  font-size: 35px;
+  font-family: to;
+  margin-top: 15px;
+  transform: translateZ(20px);
+}
+
+.profile_card::after {
+  box-shadow: 0 0 10px rgba(125, 21, 21, 0.5), 0 0 18px rgba(125, 21, 21, 0.6),
+    0 0 4px rgba(125, 21, 21, 1), inset 12px 12px 12px rgba(255, 255, 255, 0.6),
+    inset 0 0 20px rgba(24, 23, 23, 0.788);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #111111;
+  border-top-left-radius: var(--cardRound);
+  border-top-right-radius: var(--cardRound);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+}
+/* header::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity var(--animationSpeed) ease;
+    border-top-left-radius: var(--cardRound);
+    border-top-right-radius: var(--cardRound);
+    background: linear-gradient(
+      292deg,
+      rgba(221, 51, 51, 1) 0%,
+      rgba(221, 51, 51, 1) 10%,
+      rgba(255, 255, 255, 0.5) 11%,
+      rgba(255, 255, 255, 0.5) 49%,
+      rgba(221, 51, 51, 1) 50%,
+      rgba(221, 51, 51, 1) 55%,
+      rgba(255, 255, 255, 0.5) 56%,
+      rgba(255, 255, 255, 0.5) 66%,
+      rgba(221, 51, 51, 1) 67%,
+      rgba(221, 51, 51, 1) 69%,
+      rgba(255, 255, 255, 0.5) 70%
+    );
+    box-shadow: inset 1px 1px 0 0 #dd3333;
+  } */
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 0px; */
+}
+
+.card__body h1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translateZ(20px);
+  color: #3e33dd;
+}
+
+.card__body h2 {
+  font-size: 20px;
+  font-weight: 700;
+  transform: translateZ(20px);
+}
+
+.mail {
+  display: flex;
+}
+
+.mail a i {
+  margin-bottom: -30px;
+  color: green;
+  transform: translateZ(20px);
+}
+
+@media (max-width: 991px) {
+  .app_main_content {
+    margin: 30px 0;
+  }
+}
+
+/*  */
+
+.switch_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* Switch 3 Specific Style Start */
+
+.box_3 {
+  background: #19232b;
+}
+
+.toggle_switch {
+  width: 100px;
+  height: 45px;
+  position: relative;
+}
+
+input[type="checkbox"].switch_3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: 0;
+  z-index: 1;
+}
+
+svg.checkbox .outer-ring {
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+  -webkit-animation: resetRing 0.35s ease-in-out forwards;
+  animation: resetRing 0.35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring {
+  -webkit-animation: animateRing 0.35s ease-in-out forwards;
+  animation: animateRing 0.35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked {
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0deg);
+  transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked {
+  opacity: 0;
+  -webkit-transform: translateX(-200%) rotate(180deg);
+  transform: translateX(-200%) rotate(180deg);
+}
+
+svg.checkbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg.checkbox .is_checked {
+  opacity: 0;
+  fill: yellow;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translateX(200%) rotate(45deg);
+  transform: translateX(200%) rotate(45deg);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+svg.checkbox .is_unchecked {
+  opacity: 1;
+  fill: #d8ce13;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translateX(0) rotate(0deg);
+  transform: translateX(0) rotate(0deg);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+@-webkit-keyframes animateRing {
+  to {
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@keyframes animateRing {
+  to {
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@-webkit-keyframes resetRing {
+  to {
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+@keyframes resetRing {
+  to {
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+/* Switch 3 Specific Style End */

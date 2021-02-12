@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const NavButtonList = ["About", "Projects", "Skills"];
-  const routingEntities = ["/", "projects", "resume"];
+  const routingEntities = ["/", "projects", "skills"];
 
   const [activeID, setActiveID] = useState(0);
   const [NavButtons, setNavButtons] = useState(NavButtonList);
