@@ -48,7 +48,7 @@ const Sidebar = () => {
         &#10084; Ful Stack Developer &#10084;
       </div>
 
-      <div className="card js-tilt" ref={tilt}>
+      <div className="profile_card js-tilt" ref={tilt}>
         <header>
           <div>Contact Info</div>
         </header>

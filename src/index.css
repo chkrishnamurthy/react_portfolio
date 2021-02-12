@@ -320,7 +320,7 @@ body {
   --cardRound: 30px;
 }
 
-.card {
+.profile_card {
   width: 100%;
   height: 250px;
   background-color: black;
@@ -332,7 +332,7 @@ body {
   transition: transform var(--animationSpeed) ease;
   transform-style: preserve-3d;
 }
-.card::after {
+.profile_card::after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -345,8 +345,8 @@ body {
     0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-.card:hover,
-.card.hovered {
+.profile_card:hover,
+.profile_card.hovered {
   transform: scale(1.4);
 }
 
@@ -365,7 +365,7 @@ header div {
   transform: translateZ(20px);
 }
 
-.card::after {
+.profile_card::after {
   box-shadow: 0 0 10px rgba(125, 21, 21, 0.5), 0 0 18px rgba(125, 21, 21, 0.6),
     0 0 4px rgba(125, 21, 21, 1), inset 12px 12px 12px rgba(255, 255, 255, 0.6),
     inset 0 0 20px rgba(24, 23, 23, 0.788);

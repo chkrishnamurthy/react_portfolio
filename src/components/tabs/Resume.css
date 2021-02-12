@@ -344,3 +344,19 @@ h2.programas {
     width: 90%;
   }
 }
+
+.card {
+  border-radius-top: 10px;
+  background-color: #ffffff70;
+}
+.card-body {
+  text-align: left;
+  background-color: #141414;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  /* background-color: grey; */
+}
+.resume-card {
+  height: auto;
+}

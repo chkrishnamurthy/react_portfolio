@@ -1,0 +1,130 @@
+.container {
+  /* background-color: #242331; */
+}
+
+.about_me {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.about_me h3 {
+  color: white;
+  text-align: left;
+  font-size: 25px;
+}
+.about_me i {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.about_me_info {
+  width: 100%;
+  height: auto;
+  border: solid 0.5px rgba(255, 255, 255, 0.103);
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.328rem;
+  padding: 5px;
+  color: white;
+}
+
+/*  */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.snip1336 {
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  /* min-width: 450px;
+  max-width: 550px; */
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1336 img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1336 figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.snip1336 figcaption:before {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h3 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h4 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h5 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.snip1336 p,
+.snip1336 ul li,
+.snip1336 ul li {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}

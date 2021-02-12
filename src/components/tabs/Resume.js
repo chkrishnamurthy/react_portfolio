@@ -12,22 +12,25 @@ const Resume = () => {
       className="container resume"
     >
       <div className="row">
-        <div className="col-lg-6 resume-card">
-          <h4 className="resume-card_heading">Education</h4>
-
-          <div className="resume-card_body">
-            <h5 className="resume-card_title"> Computer Science</h5>
-            <p className="resume-card_name">Acadamic details</p>
-            <p className="resume-car_details">krishnanjkdsnckjjjjjjj</p>
+        <div className="col-lg-4 resume-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Education</h4>
+              <p class="card-text">Bachelor of Computer Science</p>
+              <p class="card-text">AV College of Arts, Science and Commerce</p>
+            </div>
           </div>
         </div>
-        <div className="col-lg-6 resume-card">
-          <h4 className="resume-card_heading">Experience</h4>
-
-          <div className="resume-card_body">
-            <h5 className="resume-card_title"> Google</h5>
-            <p className="resume-card_name">Accenture</p>
-            <p className="resume-car_details">krishnanjkdsnckjjjjjjj</p>
+        <div className="col-lg-8 resume-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Experience</h4>
+              <p class="card-text">Accenture Solutions Limited</p>
+              <p class="card-text">
+                Currently working as a Web Developer Analyst in Accenture from
+                Oct 11 2019 to till date.
+              </p>
+            </div>
           </div>
         </div>
       </div>

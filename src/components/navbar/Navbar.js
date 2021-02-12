@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const NavButtonList = ["About", "Projects", "Resume"];
+  const NavButtonList = ["About", "Projects", "Skills"];
   const routingEntities = ["/", "projects", "resume"];
 
   const [activeID, setActiveID] = useState(0);
