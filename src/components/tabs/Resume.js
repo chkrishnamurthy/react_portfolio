@@ -1,9 +1,16 @@
 import React from "react";
 import "./Resume.css";
+import { motion } from "framer-motion";
+import MotionEffect from "../MotionEffect";
 
 const Resume = () => {
   return (
-    <div className="container resume">
+    <motion.div
+      variants={MotionEffect}
+      initial="hidden"
+      animate="visible"
+      className="container resume"
+    >
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h4 className="resume-card_heading">Education</h4>
@@ -104,7 +111,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

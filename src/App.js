@@ -18,6 +18,7 @@ function App() {
 
             <div className="col-lg-9 app_main_content">
               <Navbar />
+
               <Route path="/" exact component={About} />
 
               <Route path="/resume" component={Resume} />
