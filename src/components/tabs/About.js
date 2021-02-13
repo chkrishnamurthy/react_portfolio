@@ -30,7 +30,7 @@ const About = () => {
             <ul>
               <li>Proficient in HTML, CSS, Server-Scripting,React JS</li>
               <li>Expertise in Debugging Applications</li>
-              <li>Experience Teaching Web Development</li>
+              <li>ngawmefhgnshagjfewgasfkjasdfsdfeefwbejsbdwjbqwjavmdbqwhj</li>
             </ul>
             <h4>Professional Experience</h4>
             <ul>
@@ -41,8 +41,7 @@ const About = () => {
                 Google(Internal Site)
               </li>
               <li>
-                Taught web development programming and video editing at State
-                University and Local County Community College.
+                wewerngawmefhgnshagjfewgasfkwesrweewjawbejsbdwjbqwjavmdbqwhj
               </li>
             </ul>
             <h4>Hobbies</h4>
