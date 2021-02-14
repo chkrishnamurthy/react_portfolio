@@ -30,19 +30,17 @@ const About = () => {
             <ul>
               <li>Proficient in HTML, CSS, Server-Scripting,React JS</li>
               <li>Expertise in Debugging Applications</li>
-              <li>ngawmefhgnshagjfewgasfkjasdfsdfeefwbejsbdwjbqwjavmdbqwhj</li>
+              <li>will add</li>
             </ul>
             <h4>Professional Experience</h4>
             <ul>
               <li>
                 Working as Software Developer Associate to Develop and Debug a
                 comprehensive Chrome Web Store Extensions from{" "}
-                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-google " aria-hidden="true"></i>
                 Google(Internal Site)
               </li>
-              <li>
-                wewerngawmefhgnshagjfewgasfkwesrweewjawbejsbdwjbqwjavmdbqwhj
-              </li>
+              <li>will add</li>
             </ul>
             <h4>Hobbies</h4>
             <ul>
