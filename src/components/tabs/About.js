@@ -38,7 +38,7 @@ const About = () => {
                 Working as Software Developer Associate to Develop and Debug a
                 comprehensive Chrome Web Store Extensions from{" "}
                 <i class="fa fa-google " aria-hidden="true"></i>
-                Google(Internal Site)
+                Google(Internal Site) from Oct 11 2019 to till date.
               </li>
               <li>will add</li>
             </ul>

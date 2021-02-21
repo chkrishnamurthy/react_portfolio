@@ -1,24 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 // import "./Experience.css";
 import { motion } from "framer-motion";
 import MotionEffect from "../../test/MotionEffect";
-import "./Experience.css";
-import VanillaTilt from "vanilla-tilt";
+import "./ExperienceCard.css";
 
-const Experience = () => {
-  const options = {
-    max: 50,
-    speed: 600,
-    scale: 1.04,
-    transition: true,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-    perspective: 600,
-  };
-  const tilt = useRef(null);
-
-  useEffect(() => {
-    VanillaTilt.init(tilt.current, options);
-  }, [options]);
+const ExperienceCard = () => {
   return (
     <motion.div
       variants={MotionEffect}
@@ -27,7 +13,7 @@ const Experience = () => {
       className="container exp"
     >
       <div className="row">
-        <figure class="Experience">
+        <figure class="snip1336">
           <figcaption>
             <h4>PROFESSIONAL EXPERIENCE</h4>
             <ul className="experience_ul">
@@ -60,22 +46,12 @@ const Experience = () => {
             <h4>ADDITIONAL APPLICATIONS</h4>
             <ul>
               <li>
-                I have developed Google Chrome extensions and one of the major
-                application i.e{" "}
-                <a className="getext" href="#" target="_blank">
-                  GeText,{" "}
-                </a>
+                Working as Software Developer Associate to Develop and Debug a
+                comprehensive Chrome Web Store Extensions from{" "}
                 <i class="fa fa-google " aria-hidden="true"></i>
+                Google(Internal Site)
               </li>
-              <li>
-                {" "}
-                Currently no of web developer people are utilizing this
-                extension,
-              </li>
-              <li>
-                Personally developed many React applications like chat
-                application
-              </li>
+              <li>will add</li>
             </ul>
             <h4>Hobbies</h4>
             <ul>
@@ -84,29 +60,9 @@ const Experience = () => {
             </ul>
           </figcaption>
         </figure>
-        <div className="row2">
-          <div
-            className="col-lg-4 resume-card"
-            ref={tilt}
-            className="education_card js-tilt"
-          >
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">EDUCATION</h4>
-                <p class="card-text header">GRADUATION </p>
-                <p class="card-text">
-                  AV College of Arts, Science and Commerce College
-                </p>
-                <p class="card-text">
-                  Bachelor of Computer Science 2013 - 2016
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </motion.div>
   );
 };
 
-export default Experience;
+export default ExperienceCard;
