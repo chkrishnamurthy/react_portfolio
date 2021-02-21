@@ -56,12 +56,11 @@ div.navbar_container a {
 }
 
 .navbar_main {
-  /*height: 100px; */
+  height: 100px;
 }
 hr {
   color: white;
   background-color: white;
   border: solid rgba(255, 255, 255, 0.664) 0.8px;
-  width: 100%;
-  margin:20px 0px;
+  width: 95%;
 }

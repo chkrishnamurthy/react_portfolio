@@ -46,11 +46,10 @@ const Sidebar = () => {
   }, [options]);
 
   return (
-   
     <div className="sidebar">
       <img src={avatar} alt="" className="sidebar_avatar" />
 
-      {/*<div class="toggle_switch">
+      <div class="toggle_switch">
         <input type="checkbox" class="switch_3" onClick={toggleTheme} />
         <svg
           class="checkbox"
@@ -76,7 +75,7 @@ const Sidebar = () => {
             d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z"
           />
         </svg>
-      </div> */}
+      </div>
 
       <div className="sidebar_name">
         <p className="head-title">

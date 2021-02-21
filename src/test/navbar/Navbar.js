@@ -3,8 +3,8 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const NavButtonList = ["About", "Projects", "Skills", "Experience"];
-  const routingEntities = ["/", "projects", "skills", "experience"];
+  const NavButtonList = ["About", "Projects", "Skills"];
+  const routingEntities = ["/", "projects", "skills"];
 
   const [activeID, setActiveID] = useState(0);
   const [NavButtons, setNavButtons] = useState(NavButtonList);
@@ -19,10 +19,8 @@ const Navbar = () => {
       setActiveID(0);
     } else if (currentUrl.endsWith("/projects")) {
       setActiveID(1);
-    } else if (currentUrl.endsWith("/skills")) {
-      setActiveID(2);
     } else {
-      setActiveID(3);
+      setActiveID(2);
     }
   });
 

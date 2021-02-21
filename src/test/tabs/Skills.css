@@ -13,7 +13,7 @@ body {
 h2 {
   font-size: 2.7em;
   font-weight: normal;
-  /*margin: 0 0 30px;*/
+  margin: 0 0 30px;
   text-align: center;
   color: #2187e7;
   text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
@@ -38,12 +38,11 @@ h2.programas {
 }
 
 .skills_container {
-  
-  padding: 2%;
+  width: 90%;
+  /* padding: 5%; */
   margin: 0 auto;
   overflow: hidden;
-  /*border: solid white 1px;
-  width: 90%; */
+  border: solid white 1px;
 }
 
 .col {
@@ -58,19 +57,19 @@ h2.programas {
 /*.col { width:101%; }*/
 .skill {
   list-style: none;
-  padding:15px;
+  /* padding-top: 30px; */
 }
 
- .skill li {
-  margin-bottom: 40px;
+.skill li {
+  margin-bottom: 70px;
   background: #030303;
   height: 6px;
   left: 90%;
-  /*border-radius: 3px;
+  border-radius: 3px;
   border-left: 1px solid #111;
   border-top: 1px solid #111;
   border-right: 1px solid #333;
-  border-bottom: 1px solid #333; */
+  border-bottom: 1px solid #333;
 }
 
 .skill li em {
@@ -79,7 +78,7 @@ h2.programas {
   font-size: 14px;
   text-align: center;
   color: #dedede;
- 
+  top: -28px;
 }
 
 .blueline {
@@ -94,6 +93,7 @@ h2.programas {
   margin: 2px 0;
   background: #9acd32;
   position: absolute;
+
   box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
 }
 .redline {
@@ -345,7 +345,6 @@ h2.programas {
 .card {
   border-radius-top: 10px;
   background-color: #ffffff70;
-  
 }
 .card-body {
   text-align: left;
@@ -356,7 +355,5 @@ h2.programas {
   /* background-color: grey; */
 }
 .resume-card {
-  padding: 0px;
   height: auto;
-  margin: 10px 0px;
 }

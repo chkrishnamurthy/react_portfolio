@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./components/tabs/About";
 import Skills from "./components/tabs/Skills";
 import Projects from "./components/tabs/Projects";
+import Experience from "./components/tabs/Experience";
 
 function App() {
   return (
@@ -18,11 +19,10 @@ function App() {
 
             <div className="col-lg-9 app_main_content">
               <Navbar />
-
               <Route path="/" exact component={About} />
-
               <Route path="/skills" component={Skills} />
               <Route path="/projects" component={Projects} />
+              <Route path="/experience" component={Experience} />
             </div>
           </div>
         </div>
