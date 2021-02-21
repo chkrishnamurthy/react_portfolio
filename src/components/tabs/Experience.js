@@ -62,7 +62,11 @@ const Experience = () => {
               <li>
                 I have developed Google Chrome extensions and one of the major
                 application i.e{" "}
-                <a className="getext" href="#" target="_blank">
+                <a
+                  className="getext"
+                  href="https://chrome.google.com/webstore/detail/getext/dkcgooalhicnkfdiaejibmfjcgoiflfg"
+                  target="_blank"
+                >
                   GeText,{" "}
                 </a>
                 <i class="fa fa-google " aria-hidden="true"></i>
