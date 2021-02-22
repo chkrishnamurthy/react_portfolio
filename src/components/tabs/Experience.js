@@ -78,7 +78,7 @@ const Experience = () => {
               </li>
               <li>
                 Personally developed many React applications like chat
-                application
+                application... add few more points
               </li>
             </ul>
           </figcaption>

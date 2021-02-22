@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import avatar from "../../assets/icons2/avatar.jpg";
 import VanillaTilt from "vanilla-tilt";
 import "./Sidebar.css";
-
+import { SiLeetcode } from "react-icons/si";
+import { FaGoodreadsG } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
 // import
 const getTheme = () => {
   let theme = "dark-theme";
@@ -28,9 +30,6 @@ const Sidebar = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const handleEmailMe = () => {
-    window.open("mailto:chalapatikrishnamurthy@gmail.com");
-  };
   const options = {
     max: 50,
     speed: 600,
@@ -49,7 +48,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <img src={avatar} alt="" className="sidebar_avatar" />
 
-      {/*<div class="toggle_switch">
+      <div class="toggle_switch">
         <input type="checkbox" class="switch_3" onClick={toggleTheme} />
         <svg
           class="checkbox"
@@ -61,7 +60,7 @@ const Sidebar = () => {
             class="outer-ring"
             d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z"
             fill="none"
-            stroke="#233043"  
+            stroke="#233043"
             stroke-width="3"
             stroke-linecap="square"
             stroke-miterlimit="3"
@@ -75,7 +74,7 @@ const Sidebar = () => {
             d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z"
           />
         </svg>
-      </div> */}
+      </div>
 
       <div className="sidebar_name">
         <p className="head-title">
@@ -104,13 +103,12 @@ const Sidebar = () => {
           <div className="card_title">Contact Info</div>
         </header>
         <div className="card__body">
-          <h1>7396678358</h1>
-          <h1>Hyderabad</h1>
-          <div className="mail">
-            <h1>chalapatikrishnamurthy@gmail.com</h1>
-            <a href="/#" onClick={handleEmailMe}>
-              <i className="fa fa-pencil" aria-hidden="true"></i>
-            </a>
+          <div className="card_details">
+            <h1>7396678358</h1>
+            <h1>Hyderabad</h1>
+            <div className="mail">
+              <h1>chalapatikrishnamurthy@gmail.com</h1>
+            </div>
           </div>
           <a href="/#" download="#">
             <div className="buttonDownload">Download Resume</div>
@@ -122,23 +120,21 @@ const Sidebar = () => {
       <div className="sidebar_social_icons">
         <ul>
           <li>
-            <a href="/#">
-              <i className="fa fa-facebook" aria-hidden="true"></i>
+            <a
+              href="https://www.goodreads.com/user/show/108145823-krishna-murthy"
+              target="_blank"
+            >
+              <FaGoodreadsG />
             </a>
           </li>
           <li>
             <a href="/#">
-              <i className="fa fa-instagram" aria-hidden="true"></i>
+              <GrLinkedinOption />
             </a>
           </li>
           <li>
-            <a href="/#">
+            <a href="https://github.com/chkrishnamurthy" target="_blank">
               <i className="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="/#">
-              <i className="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
         </ul>

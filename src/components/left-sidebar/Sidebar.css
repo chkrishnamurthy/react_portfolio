@@ -333,6 +333,7 @@
 
 .card__body h1 {
   text-shadow: 0 0 5px rgba(125, 21, 21, 0.5);
+  color: white;
 }
 
 /* header::after {
@@ -347,9 +348,9 @@ header div {
 }
 
 .profile_card::after {
-  box-shadow: 0 0 10px rgba(125, 21, 21, 0.5), 0 0 18px rgba(125, 21, 21, 0.6),
-    0 0 4px rgba(125, 21, 21, 1), inset 12px 12px 12px rgba(255, 255, 255, 0.6),
-    inset 0 0 20px rgba(24, 23, 23, 0.788);
+  box-shadow: 0 0 1px rgb(125 21 21 / 50%), 0 0 18px rgb(125 21 21 / 60%),
+    0 0 4px rgb(125 21 21), inset 4px 9px 13px rgb(255 255 255 / 60%),
+    inset 0 0 20px rgb(24 23 23 / 79%);
 }
 
 header {
@@ -405,7 +406,7 @@ header {
   font-size: 15px;
   font-weight: 700;
   transform: translateZ(20px);
-  color: #3e33dd;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .card__body h2 {
@@ -563,3 +564,11 @@ svg.checkbox .is_unchecked {
 }
 
 /* Switch 3 Specific Style End */
+
+.card_details {
+  margin-top: 10px;
+}
+
+.card_details h1 {
+  padding: 4px;
+}
