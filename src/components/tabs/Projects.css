@@ -12,8 +12,8 @@
 }
 
 .projectcard_image {
-  width: 82%;
-  height: 80%;
+  width: 75%;
+  height: 60%;
   border-radius: 18px;
   transition: transform 0.8s ease;
 }
@@ -35,10 +35,11 @@
 
 .projectcard_title {
   margin-top: 12px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.671);
 }
 
 .project_navbar {

@@ -40,6 +40,7 @@ const Projects = () => {
       </div>
       <div className="row">
         {projects.map((project, index) => {
+          console.log(project.name);
           return <ProjectCard key={project.name} projects={project} />;
         })}
       </div>

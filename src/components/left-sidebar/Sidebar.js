@@ -46,7 +46,6 @@ const Sidebar = () => {
   }, [options]);
 
   return (
-   
     <div className="sidebar">
       <img src={avatar} alt="" className="sidebar_avatar" />
 
@@ -62,7 +61,7 @@ const Sidebar = () => {
             class="outer-ring"
             d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z"
             fill="none"
-            stroke="#233043"
+            stroke="#233043"  
             stroke-width="3"
             stroke-linecap="square"
             stroke-miterlimit="3"
@@ -97,12 +96,12 @@ const Sidebar = () => {
         </p>
       </div>
       <div className="sidebar_item sidebar_role">
-        &#10084; Ful Stack Developer &#10084;
+        &#10084; FrondEnd Developer &#10084;
       </div>
 
       <div className="profile_card js-tilt" ref={tilt}>
         <header>
-          <div>Contact Info</div>
+          <div className="card_title">Contact Info</div>
         </header>
         <div className="card__body">
           <h1>7396678358</h1>

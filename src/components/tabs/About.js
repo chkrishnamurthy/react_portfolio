@@ -26,13 +26,7 @@ const About = () => {
               &nbsp;to code front-end projects, always looking for innovative
               ways to create, with less code and all good practices...!
             </p>
-            <h3>Key skills include:</h3>
-            <ul>
-              <li>Proficient in HTML, CSS, Server-Scripting,React JS</li>
-              <li>Expertise in Debugging Applications</li>
-              <li>will add</li>
-            </ul>
-            <h4>Professional Experience</h4>
+            <h4>Professional Activity</h4>
             <ul>
               <li>
                 Working as Software Developer Associate to Develop and Debug a
@@ -40,11 +34,21 @@ const About = () => {
                 <i class="fa fa-google " aria-hidden="true"></i>
                 Google(Internal Site) from Oct 11 2019 to till date.
               </li>
+            </ul>
+            <h3>Key skills include:</h3>
+            <ul>
+              <li>Proficient in HTML, CSS, Server-Scripting,React JS,NodeJS</li>
+              <li>Expertise in Debugging Applications</li>
               <li>will add</li>
             </ul>
+
             <h4>Hobbies</h4>
             <ul>
-              <li>Reading Novels(fiction and Non fiction)</li>
+              <li>
+                {" "}
+                I <i class="fa fa-heart" aria-hidden="true"></i> Reading
+                Books(fiction and Non fiction)
+              </li>
               <li>Learning New technogies</li>
             </ul>
           </figcaption>

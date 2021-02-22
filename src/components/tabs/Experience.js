@@ -81,11 +81,6 @@ const Experience = () => {
                 application
               </li>
             </ul>
-            <h4>Hobbies</h4>
-            <ul>
-              <li>Reading Novels(fiction and Non fiction)</li>
-              <li>Learning New technogies</li>
-            </ul>
           </figcaption>
         </figure>
         <div className="row2">

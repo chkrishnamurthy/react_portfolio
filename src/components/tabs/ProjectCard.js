@@ -15,7 +15,7 @@ const ProjectCard = ({ projects: { name, image, deploy_url, category } }) => {
         <a href={deploy_url} target="_blank">
           <img src={image} alt={name} className="projectcard_image" />
         </a>
-        <div className="projectcard_title">Test1</div>
+        <div className="projectcard_title">{name}</div>
       </div>
     </motion.div>
   );

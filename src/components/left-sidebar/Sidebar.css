@@ -163,6 +163,11 @@
 
 .sidebar_role {
   font-size: 20px;
+  color: white;
+}
+
+.card_title {
+  color: white;
 }
 /* sidebar role */
 
