@@ -15,13 +15,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const currentUrl = window.location.href;
-    if (currentUrl.endsWith("/")) {
+    if (currentUrl.endsWith("/about")) {
       setActiveID(0);
     } else if (currentUrl.endsWith("/projects")) {
       setActiveID(1);
     } else if (currentUrl.endsWith("/skills")) {
       setActiveID(2);
-    } else {
+    } else if (currentUrl.endsWith("/experience")) {
       setActiveID(3);
     }
   });
@@ -49,7 +49,6 @@ const Navbar = () => {
             </Link>
           );
         })}
-        <div></div>
       </div>
       <hr />
     </div>
